@@ -10,13 +10,13 @@ Projeto prático desenvolvido na faculdade para a empresa Ativo Investimentos, u
 
 O banco de dados foi projetado para gerenciar informações financeiras complexas de forma eficiente, permitindo o controle de:
 
-Cadastro de Clientes: Armazenamento seguro dos dados dos investidores.
+* Cadastro de Clientes: Armazenamento seguro dos dados dos investidores.
 
-Gestão de Portfólio: Registro de investimentos, tipos de ativos e composição de carteiras.
+* Gestão de Portfólio: Registro de investimentos, tipos de ativos e composição de carteiras.
 
-Análise de Performance: Monitoramento do crescimento e rentabilidade das aplicações.
+* Análise de Performance: Monitoramento do crescimento e rentabilidade das aplicações.
 
-Gestão de Riscos: Classificação dos ativos em níveis de risco (baixo, médio e alto).
+* Gestão de Riscos: Classificação dos ativos em níveis de risco (baixo, médio e alto).
 
 ----------------------
 
