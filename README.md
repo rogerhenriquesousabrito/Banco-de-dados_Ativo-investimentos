@@ -1,6 +1,7 @@
 # Banco-de-dados_Ativo-investimentos
 
 📌 Sobre o Projeto
+
 Projeto prático desenvolvido na faculdade para a empresa Ativo Investimentos, unindo a estruturação de dados no Back-end com o design de experiência do usuário (UX/UI).
 
 🗄️ Modelagem do Banco de Dados
