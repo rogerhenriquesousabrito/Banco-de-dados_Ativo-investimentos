@@ -26,7 +26,6 @@ A interface foi inteiramente desenhada no Figma com base na estrutura do banco d
 
 ## 🖥️ Tecnologias utilizadas
 
-
 SGDB: PostgreSQL
 
 Modelagem Visual: Figma
