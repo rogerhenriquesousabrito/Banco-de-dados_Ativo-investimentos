@@ -1,8 +1,20 @@
-## 🛢️ Script SQL 
+
+## 🗄️ Modelagem do Banco de Dados
+
+Este repositório contém a estrutura de tabelas e cargas iniciais de dados para o sistema de gerenciamento de investimentos da **Ativo Investimentos**.
+
+---
+
+### 📌 Estrutura das Tabelas (DDL)
+
+```sql
 
 -- =============================================
+
 -- TABELAS PRINCIPAIS
+
 -- =============================================
+
 
 CREATE TABLE perfil (
     id_perfil SERIAL PRIMARY KEY,
@@ -46,9 +58,13 @@ CREATE TABLE clientes (
     FOREIGN KEY (id_perfil) REFERENCES perfil (id_perfil)
 );
 
+
 -- =============================================
+
 -- TABELAS DE RELACIONAMENTO (N:N)
+
 -- =============================================
+
 
 CREATE TABLE perfil_investimentos (
     id_investimentos INT NOT NULL,
@@ -74,35 +90,53 @@ CREATE TABLE projecao_investimentos (
     FOREIGN KEY (id_investimentos) REFERENCES investimentos (id_investimentos)
 );
 
--- INSERTS
+## 📥 Carga Inicial de Dados (DML)
+
+SQL
+
 -- =============================================
+
 -- PERFIS
+
 -- =============================================
+
 INSERT INTO perfil (tipo_fase, tipo_perfil)
 VALUES
 ('Acumulação', 'Conservador'),
 ('Multiplicação', 'Moderado'),
 ('Preservação de Patrimônio', 'Agressivo');
 
+
 -- =============================================
+
 -- CARTEIRAS (sem vínculo com perfil)
+
 -- =============================================
+
 INSERT INTO carteira DEFAULT VALUES;
 INSERT INTO carteira DEFAULT VALUES;
 INSERT INTO carteira DEFAULT VALUES;
 
+
 -- =============================================
+
 -- CLIENTES
+
 -- =============================================
+
 INSERT INTO clientes (nome, cpf, email, telefone, id_carteira, id_perfil)
 VALUES
 ('João Silva', '12345678901', 'joao.silva@email.com', '11999990001', 1, 1),
 ('Maria Souza', '23456789012', 'maria.souza@email.com', '11999990002', 2, 2),
 ('Carlos Lima', '34567890123', 'carlos.lima@email.com', '11999990003', 3, 3);
 
+
 -- =============================================
+
 -- INVESTIMENTOS
+
 -- =============================================
+
 INSERT INTO investimentos (nome_investimentos, tipo_investimentos)
 VALUES
 ('CDB Banco XP', 'Renda Fixa'),
@@ -110,9 +144,13 @@ VALUES
 ('Ações Petrobras', 'Renda Variável'),
 ('Fundo Imobiliário ABCD11', 'Renda Variável');
 
+
 -- =============================================
+
 -- PROJEÇÕES
+
 -- =============================================
+
 INSERT INTO projecao (tipo_prazo, rentabilidade_esperado, id_carteira)
 VALUES
 ('Curto/Médio', 8.50, 1),
@@ -120,8 +158,11 @@ VALUES
 ('Longo', 18.75, 3);
 
 -- =============================================
+
 -- RELACIONAMENTOS ENTRE PERFIL E INVESTIMENTOS
+
 -- =============================================
+
 INSERT INTO perfil_investimentos (id_investimentos, id_perfil)
 VALUES
 (1, 1),
@@ -131,8 +172,11 @@ VALUES
 (4, 3);
 
 -- =============================================
+
 -- RELACIONAMENTOS ENTRE CARTEIRA E INVESTIMENTOS
+
 -- =============================================
+
 INSERT INTO carteira_investimentos (id_carteira, id_investimentos)
 VALUES
 (1, 1),
@@ -142,8 +186,11 @@ VALUES
 (3, 4);
 
 -- =============================================
+
 -- RELACIONAMENTOS ENTRE PROJEÇÃO E INVESTIMENTOS
+
 -- =============================================
+
 INSERT INTO projecao_investimentos (id_projecao, id_investimentos)
 VALUES
 (1, 1),
