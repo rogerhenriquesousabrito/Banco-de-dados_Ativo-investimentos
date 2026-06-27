@@ -4,6 +4,7 @@
 
 Projeto prático desenvolvido na faculdade para a empresa Ativo Investimentos, unindo a estruturação de dados no Back-end com o design de experiência do usuário (UX/UI).
 
+----------------------
 
 🗄️ Modelagem do Banco de Dados
 
@@ -17,6 +18,7 @@ Análise de Performance: Monitoramento do crescimento e rentabilidade das aplica
 
 Gestão de Riscos: Classificação dos ativos em níveis de risco (baixo, médio e alto).
 
+----------------------
 
 🎨 Interface e Usabilidade (Figma)
 
