@@ -23,3 +23,8 @@ O banco de dados foi projetado para gerenciar informações financeiras complexa
 ## 🎨 Interface e Usabilidade (Figma)
 
 A interface foi inteiramente desenhada no Figma com base na estrutura do banco de dados, focando em transformar métricas financeiras em telas visuais de fácil manuseio e navegação intuitiva.
+
+## 🖥️ Tecnologias utilizadas
+
+SGDB: PostgreSQL
+Modelagem Visual: Figma
